@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Website</title>
+<link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+<header>
+<div class="container">
+<h1 class="site-title">My First Website</h1>
+<nav class="navbar">
+<ul>
+<li><a href="#" data-target="home" class="active">Home</a></li>
+<li><a href="#" data-target="about">About</a></li>
+<li><a href="#" data-target="contact">Contact</a></li>
+</ul>
+</nav>
+<div id="settings">
+<button id="settings-toggle">⋮</button>
+<div id="settings-menu" class="hidden">
+<button class="theme-btn" data-theme="light">Light Theme</button>
+<button class="theme-btn" data-theme="dark">Dark Theme</button>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Home Section -->
+<section id="home" class="content-section">
+<div class="container">
+<h2>Welcome to My First Website</h2>
+<p>This is the homepage with an attractive background and engaging
+content.</p>
+<p>Explore the website to learn more about us and get in touch.</p>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="content-section hidden">
+<div class="container">
+<h2>About Us</h2>
+<p>We are passionate about web development, delivering top-quality
+solutions.</p>
+<p>Our mission is to create engaging and dynamic websites for our clients.</p>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="content-section hidden">
+<div class="container">
+<h2>Contact Us</h2>
+<form id="contact-form">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="message">Message:</label>
+<textarea id="message" name="message" required></textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<p>&copy; 2024 Skill Upgrade Internship | My First Website. All Rights
+Reserved.</p>
+</div>
+</footer>
+<script src="script_2.js"></script>
+</body>
+</html>

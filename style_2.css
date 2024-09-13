@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Base Styles */
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+transition: background-color 0.3s, color 0.3s;
+}
+.container {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+}
+/* Header Styles */
+header {
+background: #333;
+color: #fff;
+padding: 1rem 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+}
+.site-title {
+font-size: 2rem;
+margin-left: 1rem;
+}
+.navbar ul {
+list-style: none;
+display: flex;
+}
+.navbar ul li {
+margin: 0 10px;
+}
+.navbar ul li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 10px;
+}
+.navbar ul li a.active {
+background: #555;
+border-radius: 5px;
+}
+/* Settings Menu */
+#settings {
+position: relative;
+margin-right: 1rem;
+}
+#settings-toggle {
+background: #555;
+color: white;
+border: none;
+padding: 5px;
+border-radius: 50%;
+cursor: pointer;
+}
+#settings-menu {
+background: #555;
+color: white;
+position: absolute;
+top: 40px;
+right: 0;
+padding: 10px;
+border-radius: 5px;
+display: none; /* Initially hidden */
+flex-direction: column;
+}
+#settings-menu button {
+background: none;
+border: none;
+color: white;
+margin: 5px 0;
+cursor: pointer;
+text-align: left;
+}
+/* Section Styles */
+.content-section {
+padding: 2rem 0;
+}
+#home {
+background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+color: white;
+text-align: center;
+padding: 3rem 0;
+}
+#about {
+background: #f4f4f4;
+color: #333;
+padding: 2rem;
+}
+#contact {
+background: #333;
+color: white;
+padding: 2rem;
+}
+#contact-form {
+display: flex;
+flex-direction: column;
+}
+#contact-form label {
+margin: 10px 0 5px;
+}
+#contact-form input, #contact-form textarea {
+padding: 10px;
+margin-bottom: 15px;
+border-radius: 5px;
+border: 1px solid #ddd;
+}
+#contact-form button {
+padding: 10px;
+background: #ff6347;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+#contact-form button:hover {
+background: #ff4500;
+}
+/* Footer Styles */
+footer {
+background: #333;
+color: white;
+text-align: center;
+padding: 1rem 0;
+}
+/* Theme Styles */
+:root {
+--bg-color-light: white;
+--text-color-light: black;
+--bg-color-dark: #333;
+--text-color-dark: white;
+}
+[data-theme="light"] {
+background-color: var(--bg-color-light);
+color: var(--text-color-light);
+}
+[data-theme="dark"] {
+background-color: var(--bg-color-dark);
+color: var(--text-color-dark);
+}
+/* Hidden Class */
+.hidden {
+display: none;
+}
